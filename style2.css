@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.dark {
+    background-color: rgb(22, 22, 22);
+    color: wheat;
+    transition: all;
+    transition-duration: 0.5;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: wheat;
+    color: black;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+
+header {
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(240, 191, 100);
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+header.dark {
+    background-color: rgb(67, 67, 67);
+}
+
+header h2 {
+    font-size: xx-large;
+    font-weight: 900;
+    transition: all;
+    transition-duration: 0.1s;
+}
+
+
+.navItems {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-size: small;
+    font-weight: 500;
+}
+
+.navItems li:hover {
+    cursor: pointer;
+    scale: 105%;
+}
+
+.navItems li {
+    padding: 8px;
+    background-color: wheat;
+    color: black;
+    border-radius: 6%;
+}
+
+.navItems.dark li {
+    background-color: rgb(26, 26, 26);
+    color:wheat
+}
+
+.navItems a {
+    color: black;
+    text-decoration: none;
+}
+
+.navItems.dark a {
+    color: wheat;
+}
+
+
+main {
+    padding: 25px;
+    width: 100%;
+    height: 88%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 20px;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.box {
+    position: relative;
+    background-color: rgb(255, 203, 108);
+    height: 70%;
+    width: 30%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px;
+}
+
+.box h3 {
+    font-size: 42px;
+}
+
+.box.dark{
+    background-color: rgb(39, 39, 39);
+}
+
+.delete {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: red;
+    padding: 5px;
+    border-radius: 8%;
+    cursor: pointer;
+    color: white;
+}
+
+.noTodos{
+    position: absolute;
+    font-size: 32px;
+}

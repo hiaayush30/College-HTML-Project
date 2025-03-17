@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+    <header id="navbar" class="dark">
+        <h2 id="logo"></h2>
+        <ul class="navItems dark">
+            <li><a href="index2.html">ALL TODOS</a></li>
+            <li><a href="index.html">CREATE TODO</a></li>
+            <li id="mode">TOGGLE THEME</li>
+        </ul>
+    </header>
+    <main id="main" class="dark">
+        <div class="imageContainer">
+            <img src="./assets/hero.jpg" alt="study" />
+        </div>
+        <div>
+            <form id="form" class="dark" onsubmit="handleSubmit(event)">
+                <h3>Add Todo</h3>
+                <fieldset>
+                    <legend>Title</legend>
+                    <input id="title" type="text" placeholder="DSA maybe..." />
+                </fieldset>
+                <fieldset>
+                    <legend>Description</legend>
+                    <input id="desc" type="text" placeholder="Binary Search" />
+                </fieldset>
+                <button type="submit">Add Todo</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
