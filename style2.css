@@ -47,6 +47,7 @@ header h2 {
 
 
 .navItems {
+    height: 100%;
     display: flex;
     list-style: none;
     gap: 25px;
@@ -60,7 +61,10 @@ header h2 {
 }
 
 .navItems li {
-    padding: 8px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 100%;
     background-color: wheat;
     color: black;
     border-radius: 6%;
