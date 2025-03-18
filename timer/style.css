@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 body.dark {
-    background-color: rgb(22, 22, 22);
+    background: linear-gradient(to right, black, #1b1b1b);
     color: wheat;
     transition: all;
     transition-duration: 0.5;
@@ -35,7 +36,7 @@ header {
 }
 
 header.dark {
-    background-color: rgb(67, 67, 67);
+    background-color: rgb(255, 98, 0);
 }
 
 header h2 {
@@ -73,7 +74,7 @@ a.hover {
 
 .navItems.dark li {
     background-color: rgb(26, 26, 26);
-    color:wheat
+    color: wheat
 }
 
 .navItems a {
@@ -85,12 +86,17 @@ a.hover {
     color: wheat;
 }
 
+#mode:hover {
+    cursor: pointer;
+}
+
+
 main {
     padding: 25px;
     width: 100%;
     height: 88%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     overflow: auto;
@@ -112,4 +118,22 @@ main h2 {
 main button {
     padding: 10px;
     cursor: pointer;
+}
+
+@media (max-width:1024px) {
+    main {
+        flex-direction: column;
+    }
+    .navItems li {
+        font-size:small;
+        padding: 5px;
+        text-align: center;
+    }
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
 }

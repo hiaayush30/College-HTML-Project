@@ -58,5 +58,5 @@ const text = "Productify"
 text.split('').forEach((char,index)=>{
     setTimeout(()=>{
       logo.innerHTML+=logo.innerHTML=char 
-    },500+index*150)
+    },500+index*100)
 })
