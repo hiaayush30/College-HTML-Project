@@ -53,7 +53,7 @@ mode.addEventListener('click',handleMode);
 
 
 const logo = document.querySelector('#logo');
-const text = "Todo Manager"
+const text = "Productify"
 
 text.split('').forEach((char,index)=>{
     setTimeout(()=>{
