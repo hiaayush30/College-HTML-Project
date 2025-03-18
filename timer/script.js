@@ -34,3 +34,26 @@ const handleReset = ()=>{
     time=0;
     result.innerHTML="00:00:00"
 }
+
+let darkMode = true;
+
+const handleMode = () => {
+    console.log("wjhie")
+    if (darkMode) {
+        document.body.classList.remove('dark');
+        main.classList.remove('dark');
+        navbar.classList.remove('dark');
+        boxes.forEach(box=>{
+            box.classList.remove('dark');
+        })
+    } else {
+        document.body.classList.add('dark');
+        main.classList.add('dark');
+        navbar.classList.add('dark');
+        boxes.forEach(box=>{
+            box.classList.add('dark');
+        })
+    }
+    darkMode = !darkMode;
+}
+mode.addEventListener('click',handleMode);

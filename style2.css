@@ -47,24 +47,22 @@ header h2 {
 
 
 .navItems {
-    height: 100%;
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 15px;
     font-size: small;
     font-weight: 500;
 }
 
 .navItems li:hover {
     cursor: pointer;
-    scale: 105%;
+    background-color: rgb(61, 61, 61);
 }
 
 .navItems li {
     display: flex;
     align-items: center;
-    padding: 15px;
-    height: 100%;
+    padding: 10px;
     background-color: wheat;
     color: black;
     border-radius: 6%;
