@@ -115,6 +115,11 @@ main {
     justify-content: space-around;
     padding: 45px;
     flex-shrink: 0;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.box:hover{
+    scale: 1.05;
 }
 
 .box h3 {
