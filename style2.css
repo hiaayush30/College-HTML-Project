@@ -33,6 +33,7 @@ header {
     background-color: rgb(240, 191, 100);
     transition: all;
     transition-duration: 0.3s;
+    border-bottom: 5px solid white;
 }
 
 header.dark {
