@@ -169,7 +169,9 @@ form.dark button {
 
 @media (max-width:1024px) {
     main {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 15px;
+        justify-content: center;
     }
     .navItems li {
         font-size:small;
@@ -182,5 +184,20 @@ form.dark button {
         align-items: center;
         justify-content: center;
         gap: 10px;
+        height: 15%;
     }
+    form {
+        font-size: small;
+        padding: 25px;
+    }
+    fieldset input {
+        padding: 2px;
+        font-size: small;
+    }
+    form h3 {
+        font-size: 20px;
+    }
+    .imageContainer {
+        width: 90%;
+    }    
 }
