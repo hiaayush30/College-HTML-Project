@@ -55,9 +55,13 @@ header h2 {
 }
 
 .navItems li:hover {
-    cursor: pointer;
     background-color: rgb(61, 61, 61);
 }
+
+a.hover {
+    cursor: pointer;
+}
+
 
 .navItems li {
     display: flex;
