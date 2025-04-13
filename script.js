@@ -23,6 +23,7 @@ const handleSubmit = (event) => {
         id:Math.random(),
         title: title.value,
         desc: desc.value,
+        time: new Date()
     })
     localStorage.setItem('todos', JSON.stringify(todos));
     alert('todo added!');

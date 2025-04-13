@@ -21,6 +21,9 @@ todos.forEach(todo => {
     const desc = document.createElement('p');
     desc.innerHTML = todo.desc;
 
+    const time = document.createElement('p');
+    time.innerHTML = `<span>${new Date(todo.time).toLocaleTimeString()}, ${new Date(todo.time).toDateString()}</span>`
+
     const deleteSpan = document.createElement('span');
     deleteSpan.classList.add('delete');
     deleteSpan.innerHTML="delete"
@@ -33,6 +36,7 @@ todos.forEach(todo => {
 
     if(darkMode) box.classList.add('dark');
     box.appendChild(desc);
+    box.appendChild(time);
     main.appendChild(box);
 });
 
